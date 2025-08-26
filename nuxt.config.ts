@@ -14,10 +14,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',  
   devtools: { enabled: false },
 
-  //指定全局css
+
   css:['~/assets/css/tailwind.css','~/assets/css/fonts.css'],
 
-  //引入tailwindcss
+
   modules:[
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
@@ -77,13 +77,13 @@ export default defineNuxtConfig({
       priority: 0.8
     }
   },
-  //运行时全局变量
+
   runtimeConfig: {
-    //此处定义的属性只能在服务端获取到
+
     // Server
     name: 'jackson',
     environment: process.env.NODE_ENV || 'development',
-    //public中定义的属性既可以在服务端，也可以在客户端获取�?    public: {
+   public: {
       env: process.env.NUXT_PUBLIC_ENV || 'development',
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
       domainUrl: process.env.NUXT_PUBLIC_DOMAIN_URL,
@@ -100,11 +100,11 @@ export default defineNuxtConfig({
   },
   devServer: {
     port: Number(process.env.PORT) || 3000,
-    host: '0.0.0.0' // 允许所�?IP 访问
+    host: '0.0.0.0' 
   },
   vite: {
     server: {
-      allowedHosts: ['mail.scu.edu.kg'] // 允许指定域名
+      allowedHosts: ['mail.scu.edu.kg'] 
     }
   }
 })
