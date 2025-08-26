@@ -1,24 +1,24 @@
 export default defineNuxtConfig({
-  app:{
-    head:{
-      title:'FreeTempMail',
-      meta:[
-        { 
-          name: 'google-site-verification', 
-          content: process.env.GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE  // Google Search Console verification code  
+  app: {
+    head: {
+      title: 'FreeTempMail',
+      meta: [
+        {
+          name: 'google-site-verification',
+          content: process.env.GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE // Google Search Console verification code
         }
       ]
     }
   },
   ssr: true,
-  compatibilityDate: '2024-11-01',  
+  compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
 
+  // Global CSS
+  css: ['~/assets/css/tailwind.css', '~/assets/css/fonts.css'],
 
-  css:['~/assets/css/tailwind.css','~/assets/css/fonts.css'],
-
-
-  modules:[
+  // Import modules
+  modules: [
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxtjs/i18n',
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   ],
   i18n: {
     strategy: 'prefix_except_default',
-    locales: ['en-US', 'zh-CN','JP'],
+    locales: ['en-US', 'zh-CN', 'JP'],
     defaultLocale: 'en-US',
     vueI18n: '@@/i18n/config.ts',
   },
@@ -42,17 +42,17 @@ export default defineNuxtConfig({
         description: 'FreeTempMail is a free temporary email service that allows you to create disposable email addresses to protect your privacy. No registration required, instant generation, automatic email reception.',
         links: [
           {
-            title: 'FreeTempMail `s Features',
+            title: 'FreeTempMail`s Features',
             description: 'FreeTempMail is a free temporary email service that allows you to create disposable email addresses to protect your privacy. No registration required, instant generation, automatic email reception.',
             href: 'https://mail.scu.edu.kg/#features',
           },
           {
-            title: 'FreeTempMail `s testimonials',
+            title: 'FreeTempMail`s testimonials',
             description: 'What Our Customers Say?.',
             href: 'https://mail.scu.edu.kg/#testimonials',
           },
           {
-            title: 'FreeTempMail `s faq',
+            title: 'FreeTempMail`s faq',
             description: 'the most frequently asked questions.',
             href: 'https://mail.scu.edu.kg/#faq',
           }
@@ -79,11 +79,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-
-    // Server
+    // Server-side only properties
     name: 'jackson',
     environment: process.env.NODE_ENV || 'development',
-   public: {
+    // Public properties available on both server and client side
+    public: {
       env: process.env.NUXT_PUBLIC_ENV || 'development',
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
       domainUrl: process.env.NUXT_PUBLIC_DOMAIN_URL,
@@ -104,7 +104,7 @@ export default defineNuxtConfig({
   },
   vite: {
     server: {
-      allowedHosts: ['mail.scu.edu.kg'] 
+      allowedHosts: ['mail.scu.edu.kg']
     }
   }
 })
