@@ -1,24 +1,24 @@
-🌍 *[English](README.md) �?[简体中文](README_zh.md) 
+ðŸŒ *[English](README.md) âˆ?[ç®€ä½“ä¸­æ–‡](README_zh.md) 
 
 # FreeTempMail
 
 FreeTempMail is a free temporary email service that allows you to create disposable email addresses to protect your privacy. No registration required, instant generation, automatic email reception.
 
-- [👉 FreeTempMail online url](https://mail.scu.edu.kg)
+- [ðŸ‘‰ FreeTempMail online url](https://mail.scu.edu.kg)
 
-- [👉 NuxtDir-AI Navigation,submit your site for free ](https://nuxtdir.com) 
+- [ðŸ‘‰ NuxtDir-AI Navigation,submit your site for free ](https://nuxtdir.com) 
 
-- [👉 NuxtPro Open Source Code](https://github.com/PennyJoly/NuxtPro)
+- [ðŸ‘‰ NuxtPro Open Source Code](https://github.com/PennyJoly/NuxtPro)
 
-🚀 If you are looking for a Nuxt framework-based, all-in-one SaaS template with a built-in admin system and front-end/back-end compatibility, consider the commercial version of NuxtPro? (https://nuxtpro.com). The commercial version of NuxtPro allows you to launch an MVP in just 1 hour, validate your needs, and save a lot of development time. NuxtPro focuses on small and beautiful products, giving you more time to spend on promotion and operations. With mainstream AI products, a one-person company can efficiently generate revenue.
+ðŸš€ If you are looking for a Nuxt framework-based, all-in-one SaaS template with a built-in admin system and front-end/back-end compatibility, consider the commercial version of NuxtPro? (https://nuxtpro.com). The commercial version of NuxtPro allows you to launch an MVP in just 1 hour, validate your needs, and save a lot of development time. NuxtPro focuses on small and beautiful products, giving you more time to spend on promotion and operations. With mainstream AI products, a one-person company can efficiently generate revenue.
 
-👉 NuxtPro Commercial Version $40 Limited Time Early Bird Discount Coupon -> https://x.com/PennyJoly
+ðŸ‘‰ NuxtPro Commercial Version $40 Limited Time Early Bird Discount Coupon -> https://x.com/PennyJoly
 
 # TempMail image
 
 <img width="1404" height="849" alt="image" src="https://github.com/user-attachments/assets/e49b146c-c99d-49ba-a4fe-cc8c2eb6c2aa" />
 
-## 🚀 How to Quickly Start the Project
+## ðŸš€ How to Quickly Start the Project
 
 1. Clone the repository:
 ```bash
@@ -47,7 +47,7 @@ Visit http://localhost:3000 to view your nuxtpro application.
 # base config
 
 ```bash
-# env config，dev is development，prod is production
+# env configï¼Œdev is developmentï¼Œprod is production
 NODE_ENV=development
 NUXT_PUBLIC_ENV=development
 # your website url e.g: mail.scu.edu.kg
@@ -179,7 +179,7 @@ sh start.sh
 
 ## Vercel Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PennyJoly/FreeTempMail)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/guangwit9/FreeTempMail)
 
 ## API INTERFACES
 
