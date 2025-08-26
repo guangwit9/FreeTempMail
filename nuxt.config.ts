@@ -98,9 +98,10 @@ export default defineNuxtConfig({
     },
     // The private keys which are only available on the server-side
   },
+  }, // <-- The comma is missing here.
   devServer: {
     port: Number(process.env.PORT) || 3000,
-    host: '0.0.0.0' 
+    host: '0.0.0.0'
   },
   vite: {
     server: {
